@@ -12,8 +12,8 @@ public class FileUtils {
 
     /**
      *
-     * @param file
-     * @param path
+     * @param file 文件
+     * @param path 文件存放路径
      * @param fileName 源文件名
      * @return
      */
@@ -34,7 +34,8 @@ public class FileUtils {
         }
 
         try {
-            file.transferTo(dest); //保存文件
+            //保存文件
+            file.transferTo(dest);
             return true;
         } catch (IllegalStateException e) {
             // TODO Auto-generated catch block
